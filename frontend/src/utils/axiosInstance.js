@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create Axios instance with base config
 const instance = axios.create({
-  baseURL: 'https://expensetrackers-84pv.onrender.com/api',
+  baseURL: 'https://expensetrackers-bcoi.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
