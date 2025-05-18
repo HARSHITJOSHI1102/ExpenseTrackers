@@ -14,10 +14,11 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.error(err));
 
 app.use(cors({
-  origin: 'https://expense-trackers-wexn.vercel.app',  // Your frontend URL here
+  origin: 'https://expense-trackers-wexn.vercel.app',  // <-- Removed trailing slash here
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
 }));
+
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
