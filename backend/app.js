@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.error(err));
 
 app.use(cors({
-  origin: 'https://expensetrackers-1.onrender.com',  // Your frontend URL here
+  origin: 'http://localhost:5173',  // Your frontend URL here
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
 }));

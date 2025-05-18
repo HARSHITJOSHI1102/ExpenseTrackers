@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create Axios instance with base config
 const instance = axios.create({
-  baseURL: 'https://expensetrackers-81l6.onrender.com/api',
+  baseURL: 'http://localhost:5000/api',
   headers: {
     'Content-Type': 'application/json',
   },
